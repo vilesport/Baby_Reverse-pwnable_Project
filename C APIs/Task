@@ -1,0 +1,30 @@
+Most basic common C APIs:
+
+- memcpy()
+- strcpy()
+- strncpy()
+- strlen()
+- read()
+- open()
+- write()
+- scanf()
+- mmap()
+- malloc()
+- free()
+- memmove()
+- gets()
+- fread()
+- fwrite()
+- fgets()
+- exit()
+- realloc()
+- calloc()
+- memset()
+- memcmp()
+- strcmp()
+- printf()/variants of printf() <format specifier specified>
+- puts()/fputs()
+- fork()
+- pipe()
+
+Write usable programs included linux kernel's APIs, above listed APIs is mandatory, more API can be used. Finally describe how does the program functionality and write a detail report on how do you think the each API work.
