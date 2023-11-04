@@ -15,7 +15,7 @@ Example:
 + n: số lượng byte so sánh 
 
 Description:
-	Memcmp sẽ so sánh n byte bắt đầu (1) với n byte bắt đầu (2)
+	memcmp sẽ so sánh n byte bắt đầu (1) với n byte bắt đầu (2)
 	Tại mỗi byte i, nếu byte tại (1) + i khác byte tại (2) + i thì return byte ((1) + i) - byte ((2) + i)
 	Do đó:
 		+ Nếu kết quả trả về là số âm thì str1 < str2
