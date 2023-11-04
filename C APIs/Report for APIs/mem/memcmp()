@@ -1,0 +1,24 @@
+Example: 
+	int memcmp(const void *str1, const void *str2, size_t n) {
+		const unsigned char *s1 = str1, *s2 = str2;
+		int result = 0;
+		while (n--) {
+			if ((result = *s1++ - *s2++) != 0) {
+				break;
+			}
+		}
+		return result;
+	}
+
++ str1: con trỏ đến ô nhớ bắt đầu (1)
++ str2: con trỏ đến ô nhớ bắt đầu (2)
++ n: số lượng byte so sánh 
+
+Description:
+	Memcmp sẽ so sánh n byte bắt đầu (1) với n byte bắt đầu (2)
+	Tại mỗi byte i, nếu byte tại (1) + i khác byte tại (2) + i thì return byte ((1) + i) - byte ((2) + i)
+	Do đó:
+		+ Nếu kết quả trả về là số âm thì str1 < str2
+		+ Nếu kết quả trả về là số dương thì str1 > str2
+		+ Nếu kết quả trả về là 0 thì str1 = str2
+	=> Dùng memcmp để kiểm tra 1 đoạn n byte của 2 mảng bộ nhớ chứ không nhất thiết là cả mảng

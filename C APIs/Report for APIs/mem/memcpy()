@@ -1,0 +1,18 @@
+Example:
+	void *memcpy(void *dest, const void *src, size_t n) {
+		unsigned char *d = dest;
+		const unsigned char *s = src;
+		while (n--) {
+			*d++ = *s++;
+		}
+		return dest;
+	}
+
++ dest: con trỏ đến ô nhớ bắt đầu (đích)
++ scr: con trỏ đến ô nhớ bắt đầu (nguồn)
++ n: số byte cần sao chép
+
+Description:
+	memcpy() sẽ sao chép n byte từ (nguồn) vào n byte (đích)
+	=> Dùng memcpy() để đổi 1 đoạn nhớ n byte bất kì bắt đầu từ dest thành 1 đoạn nhớ n byte bắt đầu từ src
+
