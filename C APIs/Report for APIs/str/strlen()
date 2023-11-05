@@ -1,0 +1,8 @@
+Declaration:
+	size_t strlen(const char *str)
+
++ str: xâu cần kiểm tra
+
+Description:
+	strlen() sẽ trả về số lượng kí tự liên tiếp có nghĩa bắt đầu từ str
+	=> Dùng strlen() để kiểm tra độ dài của xâu

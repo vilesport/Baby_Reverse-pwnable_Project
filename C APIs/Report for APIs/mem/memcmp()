@@ -1,24 +1,16 @@
-Example: 
-	int memcmp(const void *str1, const void *str2, size_t n) {
-		const unsigned char *s1 = str1, *s2 = str2;
-		int result = 0;
-		while (n--) {
-			if ((result = *s1++ - *s2++) != 0) {
-				break;
-			}
-		}
-		return result;
-	}
+Declaration: 
+	int memcmp(const void *src1, const void *src2, size_t n) 
 
-+ str1: con trỏ đến ô nhớ bắt đầu (1)
-+ str2: con trỏ đến ô nhớ bắt đầu (2)
-+ n: số lượng byte so sánh 
++ src1: con trỏ đến block bắt đầu của đoạn 1
++ src2: con trỏ đến block bắt đầu của đoạn 2
++ n: số lượng block so sánh 
 
 Description:
-	memcmp sẽ so sánh n byte bắt đầu (1) với n byte bắt đầu (2)
-	Tại mỗi byte i, nếu byte tại (1) + i khác byte tại (2) + i thì return byte ((1) + i) - byte ((2) + i)
+	memcmp() sẽ so sánh n block bắt đầu từ src1 với n block bắt đầu từ src2
+	Tại mỗi block i, nếu block tại src1 + i khác block tại src2 + i thì return (src1 + i) - (src2 + i)
+	Nếu sau n block không return thì return 0
 	Do đó:
-		+ Nếu kết quả trả về là số âm thì str1 < str2
-		+ Nếu kết quả trả về là số dương thì str1 > str2
-		+ Nếu kết quả trả về là 0 thì str1 = str2
-	=> Dùng memcmp để kiểm tra 1 đoạn n byte của 2 mảng bộ nhớ chứ không nhất thiết là cả mảng
+		+ Nếu kết quả trả về là số âm(-1) thì đoạn src1 < đoạn src2
+		+ Nếu kết quả trả về là số dương(1) thì đoạn src1 > đoạn src2
+		+ Nếu kết quả trả về là 0 thì đoạn src1 = đoạn src2
+	=> Dùng memcmp() để kiểm tra 1 đoạn n block của 2 mảng bộ nhớ chứ không nhất thiết là cả mảng
