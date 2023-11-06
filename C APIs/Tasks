@@ -17,7 +17,7 @@ alloc:
 - calloc()
 - malloc()
 
-unknown:
+unknown(1):
 - read()
 - write()
 - gets()
@@ -31,7 +31,7 @@ in/out:
 - printf()/variants of printf() <format specifier specified>
 - scanf()
 
-unknown:
+unknown(2):
 - open()
 - exit()
 - mmap()
