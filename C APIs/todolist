@@ -1,1 +1,7 @@
-Retest and fix mem, str API description
+- Retest and fix mem, str API description:
+	+ str:
+		* strcpy()
+		* strncopy()
+	+ mem: 
+		* memcpy()
+		* memmove()
