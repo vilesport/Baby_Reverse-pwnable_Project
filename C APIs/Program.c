@@ -13,7 +13,7 @@ int main() {
     {
         char str3[] = "";
         strcpy(str3, str1);
-        printf("%s\n", str3);
+        printf("%s %s\n", str3, str2);
         strcpy(str1, str2);
         printf("%s\n", str1);
         strcpy(str2, str3);
