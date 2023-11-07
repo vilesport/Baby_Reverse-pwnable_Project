@@ -1,9 +1,12 @@
 Declaration:
-	char *strcpy(char *dest, const char *src)
+	strcpy (char *dest, const char *src)
+	{
+  		return memcpy (dest, src, strlen (src) + 1);
+	}
 
 + dest: xâu đích 
 + scr: xâu nguồn
 
 Description:
-	strcpy() sẽ thay xâu dest thành xâu src hoàn toàn (giống với việc gán dest = src)
+	strcpy() sẽ 
 	=> Dùng strcpy() để gán xâu a thành xâu b, hoặc sao chép xâu tùy ý
