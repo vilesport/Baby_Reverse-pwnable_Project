@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-
 int main() {
-    char *str = malloc(8 * (sizeof(char)));
-    str[0] = 'a';
-    str[1] = '0';
-    printf("%c", *(str + 1));
+    char str1[] = "abdef";
+    char str2[] = "cd";
+    strncpy(str2, str1, strlen(str1));
+    printf("%s\n%s", str1, str2);
 }

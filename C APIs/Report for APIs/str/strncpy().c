@@ -1,10 +1,16 @@
-Declaration:
-	char *strncpy(char *dest, const char *src, size_t n)
-
-+ dest: xâu đích 
-+ scr: xâu nguồn
+//Declaration:
+	char *strncpy (char *s1, const char *s2, size_t n)
+{
+  size_t size = __strnlen (s2, n);
+  if (size != n)
+    memset (s1 + size, '\0', n - size);
+  return memcpy (s1, s2, size);
+}
+/*
++ s1: xâu đích 
++ s2: xâu nguồn
 + n: số kí tự cần copy
 
 Description:
-	strncpy() sẽ sao chép n kí tự từ src gán vào n kí tự từ dest
-	=> Dùng strcpy() để thay 1 đoạn hoặc cả xâu dest thành 1 đoạn hoặc cả xâu có độ dài tương tự src
+	Cách hoạt động của strncpy() tuy đã có thêm số kí tự n cần được copy, dùng memset() để set các block nhớ chênh lệch về null nhưng vẫn gọi hàm memcpy() để sao chép => buffer overflow tương tự như strcpy()
+*/
