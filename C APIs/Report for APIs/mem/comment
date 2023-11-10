@@ -1,0 +1,4 @@
+Các hàm memmove, memcpy, memset sẽ thực hiện tuần tự trên các block nhớ của stack
+Tuy có hàm kiểm tra buffer overflow nhưng qua kiểm chứng thì vẫn xảy ra buffer overlow nếu num được đưa vào chưa xác định ngay lúc gọi hàm 
+Hay đúng hơn, nếu num truyền vào được xác định bằng hàm hoặc bằng con trỏ thì sẽ không kiểm tra được buffer overflow, từ đó dấn đến buffer overflow có thể tận dụng
+
