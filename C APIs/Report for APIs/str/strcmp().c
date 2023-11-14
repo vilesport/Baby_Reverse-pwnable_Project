@@ -1,4 +1,4 @@
-Declaration:
+//Declaration:
 	int STRCMP (const char *str1, const char *str2)
 	{
 		const unsigned char *s1 = (const unsigned char *) str1;
@@ -14,7 +14,7 @@ Declaration:
 		while (c1 == c2);
 		return c1 - c2;
 	}
-
+/*
 + str1: xâu số 1
 + str2: xâu số 2
 
@@ -26,3 +26,6 @@ Description:
 		+ Nếu kết quả trả về là số dương(1) thì str1 > str2
 		+ Nếu kết quả trả về là 0 thì str1 = str2
 	=> dùng strcmp() để kiểm tra thứ tự từ điển của 2 xâu 
+	Có thể tận dụng nếu c1-c2 có ý nghĩa gì đấy
+Notice: Sẽ trả về chênh lệch của 2 block nhớ khác nhau
+*/

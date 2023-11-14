@@ -13,4 +13,5 @@
 
 Description:
 	Cách hoạt động của strncpy() tuy đã có thêm số kí tự n cần được copy, dùng memset() để set các block nhớ chênh lệch về null nhưng vẫn gọi hàm memcpy() để sao chép => buffer overflow tương tự như strcpy()
+Notice: ngoài số lượng byte copy được giới hạn ra thì vẫn giống với strcpy()
 */

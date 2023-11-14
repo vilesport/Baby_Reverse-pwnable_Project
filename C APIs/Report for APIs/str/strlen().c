@@ -1,4 +1,4 @@
-Declaration:
+//Declaration:
 	size_t strlen (const char *str)
 {
   const char *char_ptr;
@@ -65,9 +65,11 @@ Declaration:
 	}
     }
 }
-
+/*
 + str: xâu cần kiểm tra
 
 Description:
-	strlen() sẽ trả về số lượng kí tự liên tiếp có nghĩa bắt đầu từ str
+	strlen() sẽ trả về số lượng kí tự liên tiếp có nghĩa bắt đầu từ str cho đến khi xuất hiện null
 	=> Dùng strlen() để kiểm tra độ dài của xâu
+Notice: Có tính chất dừng ở null
+*/

@@ -29,6 +29,6 @@ void *memcpy (void *dest, const void *src, size_t n)
 + n: số block cần sao chép
 
 Description:
-	memcpy() sẽ sao chép n block từ dest vào n block src, tuy nhiên nó chỉ lặp lại việc gán block từ dest vào src nên nếu dest và src là 1 và dest nằm phía sau src thì sẽ xảy ra hiện tượng lặp block
-	=> Dùng memcpy() để đổi 1 đoạn nhớ n block bắt từ dest thành 1 đoạn nhớ n block bắt đầu từ sr khi src != dest để tiết kiệm thời gian và tránh sai sót
+	memcpy() sẽ sao chép n block từ dest vào n block src, tuy nhiên hàm không kiểm tra liệu block đang chép vào có thuộc quản lí của dest hay không, nên có thể xảy ra buffer overflow -> thay đổi dữ liệu của n block liên tiếp, có thể ghi đè lên block nhớ không thuộc quản lí của dest
+Notice: luôn copy n block từ src vào dest mà không kiểm tra -> buffer overflow
 */

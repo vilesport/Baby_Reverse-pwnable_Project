@@ -19,4 +19,6 @@ int memcmp(const void *src1, const void *src2, size_t n)
 		+ Nếu kết quả trả về là số dương(1) thì đoạn src1 > đoạn src2
 		+ Nếu kết quả trả về là 0 thì đoạn src1 = đoạn src2
 	=> Dùng memcmp() để kiểm tra 1 đoạn n block của 2 mảng bộ nhớ chứ không nhất thiết là cả mảng
+	Vậy rõ ràng memcmp() nguy hiểm hơn strcmp() vì strcmp chỉcmp block chứa char, còn memcmp() sẽ cmp mọi giá trị, vậy nên giới hạn của src1 - scr2 cũng sẽ lớn hơn, dễ gây lỗi hơn
+Notice: buffer overflow nặng hơn strcmp do ngay khi chênh lệch sẽ trả về chênh lệch mà không quan tâm đó có phải kí tự hay không
 */
