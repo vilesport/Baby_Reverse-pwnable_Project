@@ -20,7 +20,7 @@ alloc:
 - malloc()
 Check: 0
 
-unknown(1):
+sys_read/write:
 - read()
 - write()
 - gets()
