@@ -19,7 +19,7 @@ Dynamic memory allocation:
 - calloc()
 - malloc()
 - free()
-Check: 2/4
+Check: 4/4
 
 input/output system calls:
 - read()

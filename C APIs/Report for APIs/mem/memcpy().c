@@ -1,4 +1,4 @@
-//Declaration:
+//Synopsis:
 void *memcpy (void *dest, const void *src, size_t n)
 {
   unsigned long int dstp = (long int) dest;

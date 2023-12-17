@@ -1,4 +1,4 @@
-Declaration:
+//Synopsis:
 	rettype inhibit_loop_to_libcall memmove (a1const void *dest, a2const void *src, size_t len)
 {
   unsigned long int dstp = (long int) dest;

@@ -1,4 +1,4 @@
-//Declaration:
+//Synopsis:
 	int STRCMP (const char *str1, const char *str2)
 	{
 		const unsigned char *s1 = (const unsigned char *) str1;

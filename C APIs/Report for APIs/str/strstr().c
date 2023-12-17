@@ -1,4 +1,4 @@
-//Declaration:
+//Synopsis:
 	char *strstr (const char *s1, const char *s2)
 /*
 + s1: xâu ban đầu

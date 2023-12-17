@@ -1,4 +1,4 @@
-//Delaration:
+//Synopsis:
 void *inhibit_loop_to_libcall memset (void *dstpp, int c, size_t len)
 {
   long int dstp = (long int) dstpp;

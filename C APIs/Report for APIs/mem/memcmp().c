@@ -1,7 +1,7 @@
 #include<stdio>
 #include<string.h>
 
-//Declaration:
+//Synopsis:
 int memcmp(const void *src1, const void *src2, size_t n)
 
 /*
